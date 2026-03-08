@@ -1,0 +1,10 @@
+Contact: mailto:security@bsa.org
+Preferred-Languages: en
+Canonical: https://fkamikazi.github.io/bsa-landing/.well-known/security.txt
+Policy: https://fkamikazi.github.io/bsa-landing/security-policy.html
+Expires: 2026-12-31T23:59:59.000Z
+
+# BSA Security Disclosure Policy
+# If you discover a security vulnerability, please report it responsibly.
+# We are committed to working with security researchers to verify and
+# address any potential vulnerabilities reported to us.

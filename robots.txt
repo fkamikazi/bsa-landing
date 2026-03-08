@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+Sitemap: https://fkamikazi.github.io/bsa-landing/sitemap.xml

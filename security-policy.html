@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Policy | BSA</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Mono:wght@300;400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0f; --cream: #f5f0e8; --gold: #c9a84c;
+    --muted: #6b6b7a; --border: rgba(201,168,76,0.2);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--ink); color: var(--cream); font-family: 'Cormorant Garamond', serif; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 3rem;
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+    background: rgba(10,10,15,0.8);
+  }
+  .nav-logo {
+    font-family: 'Syne', sans-serif; font-weight: 800;
+    font-size: 1.3rem; letter-spacing: 0.12em; color: var(--gold);
+    text-decoration: none;
+  }
+  .nav-back {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--cream); opacity: 0.6; text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .nav-back:hover { opacity: 1; color: var(--gold); }
+  .hero {
+    padding: 10rem 3.5rem 5rem;
+    border-bottom: 1px solid var(--border);
+    max-width: 860px;
+  }
+  .eyebrow {
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .eyebrow::before { content:''; width:1.5rem; height:1px; background:var(--gold); }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 300; line-height: 1.1;
+    margin-bottom: 1.2rem;
+  }
+  h1 em { font-style: italic; color: var(--gold); }
+  .last-updated {
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    color: var(--muted); letter-spacing: 0.08em;
+  }
+  .content {
+    max-width: 860px; padding: 5rem 3.5rem;
+  }
+  h2 {
+    font-family: 'Syne', sans-serif; font-weight: 600;
+    font-size: 1.1rem; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--gold); margin: 3rem 0 1.2rem;
+    padding-bottom: 0.7rem; border-bottom: 1px solid var(--border);
+  }
+  h2:first-child { margin-top: 0; }
+  p {
+    font-size: 1.05rem; font-weight: 300; line-height: 1.85;
+    color: rgba(245,240,232,0.65); margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none; margin: 1rem 0 1.5rem; padding: 0;
+  }
+  ul li {
+    font-size: 1.05rem; font-weight: 300; line-height: 1.8;
+    color: rgba(245,240,232,0.65);
+    padding: 0.4rem 0 0.4rem 1.5rem; position: relative;
+  }
+  ul li::before {
+    content: '—'; position: absolute; left: 0;
+    color: var(--gold); font-size: 0.9rem;
+  }
+  .highlight-box {
+    border: 1px solid var(--border);
+    background: rgba(201,168,76,0.05);
+    padding: 1.5rem 2rem; margin: 2rem 0;
+  }
+  .highlight-box p { margin: 0; color: rgba(245,240,232,0.8); }
+  .highlight-box strong { color: var(--gold); font-weight: 400; }
+  .contact-block {
+    background: rgba(245,240,232,0.03);
+    border: 1px solid var(--border);
+    padding: 2rem; margin-top: 3rem;
+  }
+  .contact-label {
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.8rem;
+  }
+  .contact-email {
+    font-family: 'DM Mono', monospace; font-size: 0.9rem;
+    color: var(--cream);
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 3.5rem;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-logo {
+    font-family: 'Syne', sans-serif; font-weight: 800;
+    font-size: 1rem; letter-spacing: 0.12em; color: var(--gold);
+  }
+  .footer-copy {
+    font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">BSA</a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="hero">
+  <div class="eyebrow">Legal & Compliance</div>
+  <h1>Security &amp; <em>Privacy</em> Policy</h1>
+  <p class="last-updated">Last updated: March 2026 &nbsp;|&nbsp; Version 1.0</p>
+</div>
+
+<div class="content">
+
+  <h2>1. Our Commitment to Security</h2>
+  <p>BSA and the Swara Platform as a Service (PaaS) are built with security as a foundational principle. We implement industry-standard security controls to protect the confidentiality, integrity, and availability of all data entrusted to us by our partners, investors, and entrepreneurs.</p>
+  <p>All data processed through Swara is subject to strict access controls, encryption in transit and at rest, and continuous monitoring for anomalous activity.</p>
+
+  <h2>2. Data We Collect</h2>
+  <p>When you interact with BSA's website or Swara platform, we may collect:</p>
+  <ul>
+    <li>Business performance and impact metrics submitted by programme participants</li>
+    <li>Contact information provided through our investor briefing request forms</li>
+    <li>Usage and analytics data to improve platform performance</li>
+    <li>Technical identifiers such as IP addresses and browser user agents (for security logging)</li>
+  </ul>
+  <p>We do not collect payment card information directly. All financial transactions are processed through certified PCI-DSS compliant third-party providers.</p>
+
+  <h2>3. How We Use Your Data</h2>
+  <ul>
+    <li>Delivering programme management, coaching, and impact tracking services</li>
+    <li>Generating real-time TRACTION dashboards for investors and programme managers</li>
+    <li>Communicating relevant updates, reports, and briefings</li>
+    <li>Improving the Swara platform and BSA's service delivery</li>
+    <li>Complying with applicable legal and regulatory obligations</li>
+  </ul>
+
+  <h2>4. Technical Security Measures</h2>
+  <p>The Swara platform and BSA infrastructure implement the following security controls:</p>
+  <ul>
+    <li><strong>Encryption:</strong> TLS 1.2+ for all data in transit; AES-256 encryption for data at rest</li>
+    <li><strong>Access Control:</strong> Role-based access control (RBAC) with principle of least privilege</li>
+    <li><strong>Authentication:</strong> Multi-factor authentication (MFA) enforced for all administrative accounts</li>
+    <li><strong>Monitoring:</strong> 24/7 intrusion detection and security event logging</li>
+    <li><strong>Patching:</strong> Regular vulnerability assessments and timely security patch management</li>
+    <li><strong>Backups:</strong> Automated daily backups with tested recovery procedures</li>
+    <li><strong>HTTP Security Headers:</strong> HSTS, CSP, X-Frame-Options, and related headers enforced on all web properties</li>
+  </ul>
+
+  <div class="highlight-box">
+    <p><strong>Zero Technical Debt Promise:</strong> As a PaaS provider, BSA manages all infrastructure security on behalf of our partners. You are never responsible for patching, updating, or securing the underlying Swara environment.</p>
+  </div>
+
+  <h2>5. Data Residency & Third Parties</h2>
+  <p>Data processed through the Swara platform is stored in secure cloud environments. We work only with sub-processors who meet our security standards and are bound by appropriate data processing agreements.</p>
+  <p>We do not sell, rent, or share personal data with third parties for marketing purposes.</p>
+
+  <h2>6. Your Rights</h2>
+  <p>Depending on your jurisdiction, you may have rights to access, correct, delete, or port your data. To exercise any of these rights, contact our Data Protection team at the address below. We will respond within 30 days.</p>
+
+  <h2>7. Cookies</h2>
+  <p>Our website uses only essential cookies required for security and basic functionality. We do not use advertising or tracking cookies. Analytics, if used, are anonymised and privacy-preserving.</p>
+
+  <h2>8. Incident Response</h2>
+  <p>In the event of a confirmed data breach affecting your information, BSA will notify affected parties within 72 hours of discovery, in accordance with applicable data protection regulations. We maintain a documented incident response plan tested annually.</p>
+
+  <h2>9. Responsible Disclosure</h2>
+  <p>BSA supports responsible security research. If you discover a potential vulnerability in our systems, please report it to us privately before any public disclosure. We commit to:</p>
+  <ul>
+    <li>Acknowledge receipt of your report within 48 hours</li>
+    <li>Provide a timeline for resolution within 10 business days</li>
+    <li>Not pursue legal action against good-faith security researchers</li>
+    <li>Credit researchers who help improve our security (with their consent)</li>
+  </ul>
+
+  <div class="contact-block">
+    <div class="contact-label">Report a Vulnerability or Privacy Concern</div>
+    <div class="contact-email">security@bsa.org</div>
+    <p style="margin-top:0.8rem;font-size:0.9rem">Please encrypt sensitive reports using our PGP key, available on request.</p>
+  </div>
+
+  <h2>10. Policy Updates</h2>
+  <p>This policy is reviewed annually or following any significant change to our systems or applicable law. Material changes will be communicated to registered partners and users via email with at least 30 days notice.</p>
+
+</div>
+
+<footer>
+  <div class="footer-logo">BSA</div>
+  <div class="footer-copy">© 2026 Business Support Africa. All rights reserved.</div>
+  <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted)">NITA Certified &nbsp;|&nbsp; ILO Certified</div>
+</footer>
+
+</body>
+</html>
